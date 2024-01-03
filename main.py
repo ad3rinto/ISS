@@ -14,7 +14,6 @@ canvas.grid(row=0, column=0)
 
 
 def get_quote():
-    global quote_text, canvas
     response = requests.get(url="https://api.kanye.rest")
     response.raise_for_status()
     data = response.json()
