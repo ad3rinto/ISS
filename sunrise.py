@@ -8,4 +8,7 @@ params = {
 response = requests.get("https://api.sunrise-sunset.org/json", params=params)
 response.raise_for_status()
 data = response.json()
-print(data)
+sunrise = (data["results"]["sunrise"])
+sunset = (data["results"]["sunset"])
+daily = (sunrise, sunset)
+print(daily)
