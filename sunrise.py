@@ -2,7 +2,8 @@ import requests
 
 params = {
     "lat": 53.3801,
-    "lng": 2.1932
+    "lng": 2.1932,
+    "formatted": 0
 }
 
 response = requests.get("https://api.sunrise-sunset.org/json", params=params)
